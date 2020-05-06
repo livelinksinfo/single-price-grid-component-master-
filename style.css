@@ -1,0 +1,136 @@
+@import "(https://fonts.google.com/specimen/Karla";
+
+* {
+    margin:0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: karla;
+}
+
+body {
+    background-color: rgb(205, 209, 212);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4{
+    margin-bottom: 25px;
+
+}
+
+h1 {
+    color: rgb(105, 226, 226);
+}
+
+h4 {
+    color: #fff;
+}
+
+h3 {
+    color: hsl(71, 73%, 54%);
+}
+p {
+    color: hsl(216, 52%, 88%);
+    font-weight: 400;
+    font-size: 1.15em;
+    line-height: 1.3em;
+}
+
+.inline {
+    display: inline;
+}
+
+.middle {
+    padding: 2px 0;
+    color: whitesmoke;
+    vertical-align: super;
+    padding-left: 12px;
+}
+.container {
+    max-width: 60%;
+    margin: 125px auto 25px ;
+    margin-bottom: 0;
+    background-color: white;
+    padding: 25px;
+    padding-top: 40px;
+    border-radius: 5px;
+    top: 150px;
+    position: static;
+    box-shadow: 0 0px 2px 2px rgb(187, 204, 142);
+}
+
+.flex {
+    
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: center;
+    align-content: center;
+    text-align: left;
+    line-height: 1.3em;
+
+}
+
+.flex-item {
+    background-color: springgreen;
+    font-size: 14px;
+    padding: 20px;
+    width: 50%;
+    
+}
+
+#item-1 {
+    background-color: rgb(43, 179, 177);
+}
+#item-2 {
+    background-color: rgb(74, 190, 189)
+}
+
+.btn {
+    width: 100%;
+    border-radius: 10px;
+    height: 45px;
+    color: #fff;
+    font-weight: 800;
+    background-color: hsl(11, 73%, 54%); 
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 0 1px -2px gray;
+}
+
+.btn-primary {
+    background-color: hsl(71, 73%, 54%);
+}
+
+.btn:hover {
+    color: #124;
+    background-color: yellow;
+}
+
+footer {
+    position: relative;
+    bottom: 10px;
+    margin-top: 12px;
+}
+
+@media (max-width: 501px){
+    .flex {
+        flex-direction: column;
+    }
+    .flex-item {
+        width: 100%;
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+     h3, h4 {
+        font-size: 1.22em;
+     }
+    
+
+    .btn {
+        width: 100%;
+        margin: 12px auto !important;
+    }
+}
